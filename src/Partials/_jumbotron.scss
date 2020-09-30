@@ -1,0 +1,22 @@
+.jumbo-wrapper {
+  background-image: url(../../img/hero.jpg);
+
+
+  .small-wrapper {
+  @include margin-container;
+  @include display-flex-end;
+  height: 500px;
+  width: 100%;
+
+    .painting-software {
+      width: 200px;
+      height: 300px;
+      background-color: red;
+    }
+    .offer {
+      width: 200px;
+      height: 300px;
+      background-color: yellow;
+      }
+  }
+}

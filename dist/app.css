@@ -50,6 +50,7 @@ header .header-wrapper {
 .main-menu img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 .main-menu li {
@@ -61,5 +62,30 @@ header .header-wrapper {
 
 .main-menu li i {
   color: #878787;
+}
+
+.jumbo-wrapper {
+  background-image: url(/images/hero.jpg?5e55fa71ee0fe7e0661bd53b02814747);
+}
+
+.jumbo-wrapper .small-wrapper {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  height: 500px;
+  width: 100%;
+}
+
+.jumbo-wrapper .small-wrapper .painting-software {
+  width: 200px;
+  height: 300px;
+  background-color: red;
+}
+
+.jumbo-wrapper .small-wrapper .offer {
+  width: 200px;
+  height: 300px;
+  background-color: yellow;
 }
 

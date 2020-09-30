@@ -4,8 +4,7 @@ header {
   .header-wrapper {
     width: 100%;
     height: 120px;
-    max-width: 1024px;
-    margin: auto;
+    @include margin-container;
   }
 }
 .contact {
@@ -36,8 +35,9 @@ header {
   img {
     max-width: 100%;
     height: auto;
+    display: block;
   }
-  
+
   li{
     @include li-inline;
     color:$colorMainMenuFont;
