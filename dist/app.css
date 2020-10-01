@@ -1,3 +1,11 @@
+@charset "UTF-8";
+.btn {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +24,12 @@ h3 {
 h4 {
   font-size: 24px;
   font-weight: 400;
+}
+
+.btn-download::after {
+  content: "\F019";
+  display: block;
+  font-size: 20px;
 }
 
 header {
@@ -70,7 +84,7 @@ header .header-wrapper {
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  height: 500px;
 }
 .jumbo-wrapper .small-wrapper {
   max-width: 1024px;
@@ -92,8 +106,13 @@ header .header-wrapper {
 .painting-software li {
   font-size: 20px;
 }
+.painting-software .btn {
+  width: 80px;
+  background-color: #878787;
+}
 
 .offer {
   width: 300px;
   background-color: #101010;
+  margin-top: 50px;
 }

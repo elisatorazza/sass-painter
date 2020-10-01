@@ -16,3 +16,14 @@ h4 {
   font-size: 24px;
   font-weight: 400;
 }
+
+// Buttons
+.btn {
+  @extend %btn;
+
+  &-download::after {
+    content:"\f019";
+    display: block;
+    font-size: 20px;
+  }
+}
