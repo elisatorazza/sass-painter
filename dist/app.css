@@ -8,10 +8,19 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+h3 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
 header {
   background-color: #101010;
 }
-
 header .header-wrapper {
   width: 100%;
   height: 120px;
@@ -23,21 +32,17 @@ header .header-wrapper {
   display: flex;
   justify-content: flex-end;
 }
-
 .contact div {
   padding: 10px 20px;
 }
-
 .contact div i {
   color: #009cff;
   display: inline-block;
 }
-
 .contact div p {
   color: #989898;
   display: inline-block;
 }
-
 .contact div select {
   margin-top: 15px;
 }
@@ -46,46 +51,49 @@ header .header-wrapper {
   display: flex;
   align-items: baseline;
 }
-
 .main-menu img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-
 .main-menu li {
   display: inline-block;
   list-style: none;
   color: #fff;
   padding: 20px 10px;
 }
-
 .main-menu li i {
   color: #878787;
 }
 
 .jumbo-wrapper {
-  background-image: url(/images/hero.jpg?5e55fa71ee0fe7e0661bd53b02814747);
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
 }
-
 .jumbo-wrapper .small-wrapper {
   max-width: 1024px;
   margin: auto;
   display: flex;
   justify-content: flex-end;
-  height: 500px;
-  width: 100%;
 }
 
-.jumbo-wrapper .small-wrapper .painting-software {
-  width: 200px;
-  height: 300px;
-  background-color: red;
+.painting-software {
+  width: 600px;
+  height: 450px;
+  margin-top: 50px;
+  background-color: transparent;
+  color: #fff;
+}
+.painting-software *:not(:last-child) {
+  padding-bottom: 20px;
+}
+.painting-software li {
+  font-size: 20px;
 }
 
-.jumbo-wrapper .small-wrapper .offer {
-  width: 200px;
-  height: 300px;
-  background-color: yellow;
+.offer {
+  width: 300px;
+  background-color: #101010;
 }
-

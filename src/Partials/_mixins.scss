@@ -10,3 +10,11 @@
   max-width: 1024px;
   margin: auto;
 }
+@mixin bg-property {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin jumboDiv {
+  height: 450px;
+  margin-top: 50px;
+}

@@ -1,22 +1,29 @@
 .jumbo-wrapper {
-  background-image: url(../../img/hero.jpg);
+  background-image: url("../img/hero.jpg");
+  @include bg-property;
+  height: 550px;
 
 
   .small-wrapper {
   @include margin-container;
   @include display-flex-end;
-  height: 500px;
-  width: 100%;
-
-    .painting-software {
-      width: 200px;
-      height: 300px;
-      background-color: red;
-    }
-    .offer {
-      width: 200px;
-      height: 300px;
-      background-color: yellow;
-      }
   }
 }
+    .painting-software {
+      width: 600px;
+      @include jumboDiv;
+      background-color: transparent;
+      color: $colorMainMenuFont;
+
+      *:not(:last-child) {
+        padding-bottom: 20px;
+      }
+
+      li {
+        font-size: 20px;
+      }
+    }
+    .offer {
+      width: 300px;
+      background-color: $headerBgColor;
+      }
