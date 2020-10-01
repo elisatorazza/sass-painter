@@ -9,24 +9,79 @@
   }
 }
 .painting-software {
-  width: 600px;
   @include jumboDiv;
   background-color: transparent;
   color: $colorMainMenuFont;
+  // width: 400px;
 
   *:not(:last-child) {
     padding-bottom: 20px;
+
+    i {
+      color: $colorHeaderFont;
+    }
   }
-  li {
-    font-size: 20px;
+
+  a {
+    text-decoration: none;
   }
   .btn {
-    width: 80px;
-    background-color: $colorAngleDown;
+    width: 250px;
+    background-color: $colorBgDwnBtn;
+
+    &-download {
+      border-right: 1px solid #fff;
+    }
   }
 }
 .offer {
-  width: 300px;
   background-color: $headerBgColor;
   margin-top: 50px;
+
+  .offer-wrapper {
+    width: 95%;
+    margin: auto;
+    height: 100%;
   }
+}
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+
+  h4 {
+  color: $colorFontBtn;
+  font-size: 24px;
+  padding-bottom: 3px;
+  }
+
+  h5 {
+  color: #878787;
+  font-size: 14px;
+  }
+}
+
+.limited {
+  margin-top: 40px;
+  padding: 5px;
+  background-color: #fff;
+
+  h4 {
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+
+  p {
+    font-weight: 300;
+    padding-bottom: 5px;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: $iconColor;
+    padding-bottom: 5px;
+
+  }
+}

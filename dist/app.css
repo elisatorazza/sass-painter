@@ -1,8 +1,8 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap);@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);@charset "UTF-8";
 .btn {
+  display: block;
   padding: 5px 10px;
   text-transform: uppercase;
-  text-decoration: none;
   color: #fff;
 }
 
@@ -16,20 +16,26 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h3 {
-  font-size: 36px;
+h3, h4, h5 {
   font-weight: 400;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 h4 {
   font-size: 24px;
-  font-weight: 400;
 }
 
 .btn-download::after {
   content: "\F019";
-  display: block;
-  font-size: 20px;
+  display: inline-block;
+}
+.btn-buy {
+  background-color: #009cff;
+  padding: 5px 25px;
+  width: 130px;
 }
 
 header {
@@ -84,6 +90,7 @@ header .header-wrapper {
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 500px;
 }
 .jumbo-wrapper .small-wrapper {
@@ -94,25 +101,69 @@ header .header-wrapper {
 }
 
 .painting-software {
-  width: 600px;
-  height: 450px;
-  margin-top: 50px;
+  height: 420px;
+  margin-top: 80px;
   background-color: transparent;
   color: #fff;
 }
 .painting-software *:not(:last-child) {
   padding-bottom: 20px;
 }
-.painting-software li {
-  font-size: 20px;
+.painting-software *:not(:last-child) i {
+  color: #989898;
+}
+.painting-software a {
+  text-decoration: none;
 }
 .painting-software .btn {
-  width: 80px;
-  background-color: #878787;
+  width: 250px;
+  background-color: #666;
+}
+.painting-software .btn-download {
+  border-right: 1px solid #fff;
 }
 
 .offer {
-  width: 300px;
   background-color: #101010;
   margin-top: 50px;
+}
+.offer .offer-wrapper {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+}
+.price-row h4 {
+  color: #fff;
+  font-size: 24px;
+  padding-bottom: 3px;
+}
+.price-row h5 {
+  color: #878787;
+  font-size: 14px;
+}
+
+.limited {
+  margin-top: 40px;
+  padding: 5px;
+  background-color: #fff;
+}
+.limited h4 {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.limited p {
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+.limited a {
+  text-decoration: none;
+  color: #009cff;
+  padding-bottom: 5px;
 }

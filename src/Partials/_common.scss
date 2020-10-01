@@ -8,13 +8,16 @@ body {
 }
 
 // typography//
-h3 {
-  font-size: 36px;
+h3, h4, h5 {
   font-weight: 400;
 }
+
+h3 {
+  font-size: 30px;
+}
+
 h4 {
   font-size: 24px;
-  font-weight: 400;
 }
 
 // Buttons
@@ -23,7 +26,12 @@ h4 {
 
   &-download::after {
     content:"\f019";
-    display: block;
-    font-size: 20px;
+    display: inline-block;
+  }
+
+  &-buy {
+    background-color: $iconColor;
+    padding: 5px 25px;
+    width: 130px;
   }
 }
