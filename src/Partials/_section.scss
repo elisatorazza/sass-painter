@@ -1,0 +1,48 @@
+.beginners {
+  background-image: url("../img/bg-section-start.jpg");
+  @include bg-property;
+
+  .wrapper {
+    max-width: 70%;
+    margin:auto;
+    position: relative;
+    height: 100%;
+
+    div.girl {
+      position: relative;
+
+      img.screen {
+        max-width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      img.girl-img {
+        position: absolute;
+        bottom: 0;
+        max-width: 100%;
+        object-fit: contain;
+      }
+    }
+
+
+  }
+}
+
+.text {
+  @extend %textSection;
+  color: #fff;
+  padding-top: 80px;
+
+  h3 {
+    padding-bottom: 20px;
+  }
+  div {
+    padding: 30px 0;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
