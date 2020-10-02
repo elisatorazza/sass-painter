@@ -24,6 +24,16 @@
 
   a {
     text-decoration: none;
+    width: 100%;
+    
+    p, p.uppercase{
+      padding: 0;
+      color: #fff;
+    }
+
+    p.uppercase {
+      text-transform: uppercase;
+    }
   }
   .btn {
     width: 250px;
@@ -34,6 +44,8 @@
     }
   }
 }
+
+//Offer box
 .offer {
   background-color: $headerBgColor;
   margin-top: 50px;

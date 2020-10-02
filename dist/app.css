@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap);@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);@charset "UTF-8";
 .btn {
-  display: block;
+  display: inline-block;
   padding: 5px 10px;
-  text-transform: uppercase;
   color: #fff;
 }
 
@@ -34,7 +33,7 @@ h4 {
   font-size: 24px;
 }
 
-.btn-download::after {
+.btn::after {
   content: "\F019";
   display: inline-block;
 }
@@ -120,6 +119,14 @@ header .header-wrapper {
 }
 .painting-software a {
   text-decoration: none;
+  width: 100%;
+}
+.painting-software a p, .painting-software a p.uppercase {
+  padding: 0;
+  color: #fff;
+}
+.painting-software a p.uppercase {
+  text-transform: uppercase;
 }
 .painting-software .btn {
   width: 250px;
